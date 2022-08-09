@@ -1,0 +1,327 @@
+$header: "Lato", sans-serif;
+$text: "Playfair Display", serif;
+
+$color: #e1b12c;
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+/*navigation*/
+
+.navigation {
+  padding: 12px 0;
+  position: relative;
+  background-image: url("https://i.postimg.cc/P5fRhvNn/pexels-huseyn-kamaladdin-667838.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation .brand {
+  font-size: 58px;
+  margin: 0 24px 0 0;
+  padding: 0;
+  font-family: "Festive", cursive;
+  color: $color;
+  text-align: left;
+  font-weight: bold;
+}
+.navigation .box-wrapper {
+  justify-content: space-between;
+}
+
+.box-primary {
+  flex: 6;
+}
+
+.box-secondary {
+  flex: 1;
+  text-align: right;
+  margin-top: 16px;
+  position: relative;
+  display: inline;
+}
+
+.navigation a {
+  font-size: 18px;
+  font-family: $header;
+  color: white;
+  margin: 0 24px 0 0;
+}
+
+/*splash*/
+.splash {
+  padding: 10px;
+}
+
+.splash-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.page-title {
+  font-size: 32px;
+  font-family: $text;
+  text-align: center;
+}
+
+.splash-inner h2 {
+  font-size: 52px;
+  font-family: $header;
+  position: relative;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 16px;
+  padding: 16px;
+  text-align: center;
+  border-width: 8px;
+  border-style: solid;
+  border-color: $color;
+  background-color: $color;
+  position: absolute;
+  right: 26%;
+  width: 40%;
+  background-position: 100% 0;
+  background-size: 300%;
+}
+
+/*services*/
+
+.title {
+  font-size: 32px;
+  text-align: center;
+  font-family: $header;
+  margin: 48px auto;
+  margin-bottom: 72px;
+  padding: 25px;
+  line-height: 0;
+}
+
+.title a {
+  font-size: 24px;
+  text-align: center;
+  font-family: $text;
+  opacity: 0.6;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.box {
+  flex: 1;
+  position: relative;
+  padding: 36px;
+  margin: 72px auto;
+}
+
+.box span {
+  position: absolute;
+  left: 40%;
+  bottom: 80%;
+}
+
+.description {
+  flex: 1;
+  font-size: 18px;
+  text-align: center;
+  margin: 12px 6px 18px 12px;
+  line-height: 0.8;
+  color: rgba($color: #000000, $alpha: 0.6);
+  font-family: $text;
+}
+
+.description:first-of-type {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  color: rgba($color: #000000, $alpha: 1);
+  font-family: $header;
+  margin-top: 24px;
+}
+
+.fas {
+  font-size: 42px;
+  text-align: center;
+  margin: 5px auto;
+  padding: 10px;
+  color: $color;
+  border-width: 3px;
+  border-style: solid;
+  border-color: $color;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*GALLERY*/
+
+.gallery {
+  background: lightgrey;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+  position: relative;
+  max-width: 300px;
+  height: 450px;
+  margin: 18px;
+  margin-bottom: 32px;
+  background: white;
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+/*footer*/
+
+.footer {
+  margin: 24px 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer li {
+  display: inline;
+}
+
+.footer i {
+  flex: 1;
+  font-size: 17px;
+  margin: 0 5px;
+  height: 15px;
+  width: 15px;
+  padding: 15px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.footer h4 {
+  flex: 1;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.footer .row {
+  justify-content: left;
+  gap: 200px;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer ul a {
+  color: black;
+  font-size: 0;
+}
+
+@media (max-width: 767px) {
+  .navigation {
+    height: 110vh;
+  }
+
+  .navigation .box-wrapper {
+    flex-direction: column;
+  }
+
+  .box-2 {
+    text-align: left;
+  }
+
+  .brand {
+    font-size: 58px;
+    float: left;
+    margin-right: 16px;
+  }
+
+  .splash-inner {
+    margin-top: 48px;
+  }
+
+  .splash-inner h2 {
+    font-size: 24px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+
+  .splash-inner a {
+    margin: 5px auto;
+  }
+
+  .title span {
+    display: none;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .title a {
+    font-size: 18px;
+  }
+
+  .footer .row {
+    gap: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .brand {
+    font-size: 48px;
+    margin: 0 16px 0 0;
+  }
+
+  .navi {
+    margin: 0 24px 0 0;
+  }
+
+  .navi a {
+    font-size: 16px;
+  }
+
+  .footer .row {
+    gap: 150px;
+  }
+}
